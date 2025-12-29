@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANAMA COFFEE & SPACE - Kedai Kopi di Pekanbaru</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header dan Navigasi -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1><i class="fas fa-coffee"></i> SANAMA COFFEE & SPACE</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reviews">Ulasan</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Nikmati Kopi Berkualitas di Suasana yang Nyaman</h2>
+            <p>Kedai kopi dengan rating 4,6 (637 ulasan) • Rp 25.000–50.000 per orang</p>
+            <div class="cta-buttons">
+                <a href="#menu" class="btn">Lihat Menu</a>
+                <a href="#contact" class="btn secondary">Hubungi Kami</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Informasi Utama -->
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Lokasi</h3>
+                    <p>Gg. Delima IX, Delima, Kec. Tampan, Kota Pekanbaru, Riau 28292</p>
+                    <p class="map-code">FCC3+OP Delima, Kota Pekanbaru, Riau</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Jam Operasional</h3>
+                    <p>Buka • Tutup pukul 00.00</p>
+                    <p class="highlight">Setiap hari</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Kontak</h3>
+                    <p>0852-7133-9970</p>
+                    <button class="copy-btn" onclick="copyPhoneNumber()">Salin nomor telepon</button>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Layanan</h3>
+                    <p>✓ Makan di tempat</p>
+                    <p>✓ Bawa pulang</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tentang SANAMA COFFEE & SPACE</h2>
+                <p>Kedai kopi yang nyaman dengan suasana yang cocok untuk bekerja, berkumpul, atau sekadar menikmati waktu sendiri.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Interior SANAMA COFFEE & SPACE">
+                </div>
+                <div class="about-text">
+                    <h3>Pengalaman Ngopi yang Berbeda</h3>
+                    <p>SANAMA COFFEE & SPACE telah menjadi tempat favorit bagi pecinta kopi di Pekanbaru dengan rating 4,6 dari 637 ulasan. Kami menyajikan kopi berkualitas tinggi dengan harga terjangkau, mulai dari Rp 25.000 hingga Rp 50.000 per orang.</p>
+                    <p>Dilaporkan oleh 160 orang sebagai tempat yang nyaman dengan pelayanan yang ramah, SANAMA COFFEE & SPACE menawarkan suasana yang cocok untuk berbagai kegiatan, mulai dari bekerja, belajar, hingga sekadar bersantai.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-wifi"></i>
+                            <span>WiFi Gratis</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-plug"></i>
+                            <span>Stop Kontak</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-parking"></i>
+                            <span>Tempat Parkir</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-music"></i>
+                            <span>Musik Tenang</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Menu Kami</h2>
+                <p>Pilihan menu kopi dan makanan dengan harga yang terjangkau</p>
+            </div>
+            
+            <div class="menu-category">
+                <h3><i class="fas fa-coffee"></i> Kopi & Minuman</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Espresso</h4>
+                            <span class="price">Rp 25.000</span>
+                        </div>
+                        <p>Kopi espresso murni dengan cita rasa kuat dan aroma khas.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Cappuccino</h4>
+                            <span class="price">Rp 30.000</span>
+                        </div>
+                        <p>Perpaduan espresso, susu panas, dan busa susu yang lembut.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Latte</h4>
+                            <span class="price">Rp 32.000</span>
+                        </div>
+                        <p>Espresso dengan lebih banyak susu dan lapisan busa tipis.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Americano</h4>
+                            <span class="price">Rp 28.000</span>
+                        </div>
+                        <p>Espresso yang diencerkan dengan air panas.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Mocha</h4>
+                            <span class="price">Rp 35.000</span>
+                        </div>
+                        <p>Perpaduan espresso, cokelat, dan susu dengan whipped cream.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Matcha Latte</h4>
+                            <span class="price">Rp 33.000</span>
+                        </div>
+                        <p>Minuman matcha asli Jepang dengan susu dan rasa yang unik.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-category">
+                <h3><i class="fas fa-utensils"></i> Makanan Ringan</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Croissant</h4>
+                            <span class="price">Rp 25.000</span>
+                        </div>
+                        <p>Croissant renyah dengan pilihan isian cokelat atau keju.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Sandwich</h4>
+                            <span class="price">Rp 35.000</span>
+                        </div>
+                        <p>Roti gandum dengan isian ayam, sayuran, dan saus spesial.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Salad Buah</h4>
+                            <span class="price">Rp 30.000</span>
+                        </div>
+                        <p>Campuran buah segar dengan yogurt atau mayones.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>French Fries</h4>
+                            <span class="price">Rp 28.000</span>
+                        </div>
+                        <p>Kentang goreng renyah dengan saus pilihan.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Brownies</h4>
+                            <span class="price">Rp 25.000</span>
+                        </div>
+                        <p>Brownies cokelat lembut dengan kacang kenari.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Cheesecake</h4>
+                            <span class="price">Rp 40.000</span>
+                        </div>
+                        <p>Cheesecake lembut dengan lapisan biskuit dan buah beri.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="price-range">
+                <p><i class="fas fa-tag"></i> <strong>Rentang Harga:</strong> Rp 25.000–50.000 per orang (dilaporkan oleh 160 orang)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ulasan Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ulasan Pelanggan</h2>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4,6 (637 ulasan)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="avatar">A</div>
+                            <div>
+                                <h4>Andi Pratama</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="date">2 minggu lalu</span>
+                    </div>
+                    <p>Tempatnya nyaman banget untuk nongkrong atau kerja. Kopinya enak dan harganya terjangkau. WiFi-nya juga kenceng!</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="avatar">S</div>
+                            <div>
+                                <h4>Sari Dewi</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="date">1 bulan lalu</span>
+                    </div>
+                    <p>Suasana cafe-nya cozy banget. Matcha latte-nya recommended! Pelayannya ramah dan fast response. Pasti balik lagi.</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="avatar">R</div>
+                            <div>
+                                <h4>Rizky Ananda</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="date">3 minggu lalu</span>
+                    </div>
+                    <p>Tempat favorit buat meeting klien atau kerja remote. Ada banyak stop kontak dan tempat duduk yang nyaman. Cappuccino-nya top!</p>
+                </div>
+            </div>
+            
+            <div class="review-actions">
+                <button class="btn" onclick="showMoreReviews()">Lihat Ulasan Lainnya</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Lokasi Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kontak & Lokasi</h2>
+                <p>Kunjungi kami atau hubungi untuk informasi lebih lanjut</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Alamat</h3>
+                            <p>Gg. Delima IX, Delima, Kec. Tampan, Kota Pekanbaru, Riau 28292</p>
+                            <p class="map-code">FCC3+OP Delima, Kota Pekanbaru, Riau</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telepon</h3>
+                            <p>0852-7133-9970</p>
+                            <button class="copy-btn" onclick="copyPhoneNumber()">Salin nomor telepon</button>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Jam Operasional</h3>
+                            <p>Buka setiap hari • Tutup pukul 00.00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <div>
+                            <h3>Rentang Harga</h3>
+                            <p>Rp 25.000–50.000 per orang</p>
+                            <p class="small">Dilaporkan oleh 160 orang</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Ikuti Kami</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <h3><i class="fas fa-map-pin"></i> Lokasi SANAMA COFFEE & SPACE</h3>
+                            <p>Gg. Delima IX, Delima, Kec. Tampan, Kota Pekanbaru, Riau</p>
+                            <div class="map-actions">
+                                <button class="btn" onclick="openMaps()"><i class="fas fa-directions"></i> Dapatkan Petunjuk Arah</button>
+                                <button class="btn secondary" onclick="shareLocation()"><i class="fas fa-share-alt"></i> Bagikan Lokasi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><i class="fas fa-coffee"></i> SANAMA COFFEE & SPACE</h2>
+                    <p>Kedai kopi dengan suasana nyaman di jantung Pekanbaru</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Tautan Cepat</h3>
+                        <ul>
+                            <li><a href="#home">Beranda</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#about">Tentang Kami</a></li>
+                            <li><a href="#contact">Kontak</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Layanan</h3>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-check"></i> Makan di Tempat</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i> Bawa Pulang</a></li>
+                            <li><a href="#"><i class="fas fa-wifi"></i> WiFi Gratis</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Hubungi Kami</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> 0852-7133-9970</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Gg. Delima IX, Delima, Pekanbaru</li>
+                            <li><i class="fas fa-clock"></i> Buka • Tutup 00.00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 SANAMA COFFEE & SPACE. Hak Cipta Dilindungi.</p>
+                <p class="rating-badge"><i class="fas fa-star"></i> 4,6 (637 ulasan) • Rp 25.000–50.000 per orang</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <span id="toast-message">Nomor telepon telah disalin ke clipboard!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
